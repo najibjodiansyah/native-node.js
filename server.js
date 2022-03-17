@@ -7,7 +7,8 @@ const http = require("http");
  * @param response: objek yang digunakan untuk menanggapi permintaan
  */
 const requestListener = (request, response) => {
-	response.setHeader("Content-Type", "text/html");
+	response.setHeader("Content-Type", "application/json");
+	response.setHeader("X-Powered-By", "NodeJS");
 
 	// response.statusCode = 200;
 
